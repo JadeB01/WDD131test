@@ -1,0 +1,56 @@
+body {
+    font-size: 20px;
+}
+
+#content {
+    max-width: 60%;
+    border: 1px solid white;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+p{
+    color: #034f9c;
+    font-size: 10px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: -10px;
+    letter-spacing: 3px;
+}
+
+hr {
+    height: -20px;
+    background-color: #034f9c;
+    width: 100%;
+    margin-top: -10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+ol li {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
