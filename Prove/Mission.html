@@ -8,12 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Statement</title>
     <link href="Mission.css" rel="stylesheet">
+    
+<select>
+
+    <option>Choose Mode</option>
+
+    <option value="dark">Dark</option>
+
+    <option value="light">Light</option>
+
+</select>              
+                    
 </head>
 <body>
 
     <div id="content">
         <h1>MISSION STATEMENT</h1>
-        <p>BRIGHAM YOUNG UNIVERSITY-IDAHO</p>
+        
+        <p id="schoolname">BRIGHAM YOUNG UNIVERSITY-IDAHO</p>
         <hr>
         <div id="statement">
             <h2>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</h2>
@@ -25,8 +37,38 @@
                 <li>Delivering education that is affordable for students and the Church.</li>
             </ol>
         </div>
-        <img src="https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp"
+            <img id="logo" src="https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp" alt="BYUI Logo">
     </div>
+    <script>
+        
+        let selectElem = document.querySelector('select');
+        let logo = document.querySelector('img');
+        
+
+        selectElem.addEventListener('change', changeTheme);
+
+        function changeTheme() {
+            let current = selectElem.value;
+            if (current == 'dark') {
+                let content = document.getElementById("content");
+                document.body.style.backgroundColor = "#121212"
+                let logo = document.getElementById("logo");
+                document.getElementById("logo").setAttribute("src", "https://wddbyui.github.io/wdd131/images/byui-logo-white.png");
+                content.style.color = "#FFFFFF";
+                
+                
+
+                
+            } else {
+                let content = document.getElementById("content");
+                document.body.style.backgroundColor = "white"
+                let logo = document.getElementById("logo");
+                document.getElementById("logo").setAttribute("src", "https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp");
+                content.style.color = "black";
+                
+            }
+        }           
+    </script>
     
 </body>
 </html>
