@@ -31,6 +31,10 @@ nav a:hover {
     text-decoration: none;
     color: #616061;
 }
+
+nav {
+    text-align: right;
+}
 .menu-btn {
     cursor: pointer;
     border: none;
@@ -46,19 +50,36 @@ footer {
     text-align: center;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 @media screen and (min-width: 500px) and (max-width: 1199px) {
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
 
+    nav a {
+        display: inline;
+    }
+
+    .menu-btn {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1200px) {
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    nav a {
+        display: inline;
+    }
+    
+    .menu-btn {
+        display: none;
     }
 }
 
