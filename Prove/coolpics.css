@@ -1,18 +1,16 @@
-/* Removes default spacing from browser */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header styles */
 header {
     background-color: #003366;
     color: white;
@@ -20,12 +18,10 @@ header {
     padding: 1rem;
 }
 
-/* Title spacing */
 header h1 {
     margin-bottom: 1rem;
 }
 
-/* Mobile menu text */
 .mobile-menu {
     display: block;
     color: white;
@@ -33,23 +29,22 @@ header h1 {
     margin-top: 0.5rem;
 }
 
-/* Hide full menu on mobile */
+
 .menu {
     display: none;
     list-style: none;
 }
 
-/* ========================= */
+
 /* TABLET + DESKTOP */
-/* ========================= */
+
 @media screen and (min-width: 700px) {
 
-    /* Hide mobile menu text */
     .mobile-menu {
         display: none;
     }
 
-    /* Show full navigation */
+    
     .menu {
         display: flex;
         justify-content: center;
@@ -61,15 +56,14 @@ header h1 {
         text-decoration: none;
     }
 
-    /* Tablet gallery */
+
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* ========================= */
+
 /* DESKTOP */
-/* ========================= */
 @media screen and (min-width: 1000px) {
 
     .gallery {
@@ -77,37 +71,28 @@ header h1 {
     }
 }
 
-/* Main content */
+
 main {
     padding: 1rem;
     text-align: center;
 }
 
-/* Gallery layout */
 .gallery {
     display: grid;
-
-    /* Mobile first: 1 column */
     grid-template-columns: 1fr;
 
     gap: 1rem;
     margin-top: 1rem;
 }
 
-/* Image styling */
 .gallery img {
     width: 100%;
-
-    /* Makes images square */
     aspect-ratio: 1 / 1;
-
-    /* Keeps image proportions */
     object-fit: cover;
 
     border-radius: 10px;
 }
 
-/* Footer styling */
 footer {
     background-color: #003366;
     color: white;
@@ -116,9 +101,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* ========================= */
 /* TABLET SIZE */
-/* ========================= */
 @media screen and (min-width: 700px) {
 
     /* Show menu on larger screens */
@@ -134,9 +117,9 @@ footer {
     }
 }
 
-/* ========================= */
+
 /* DESKTOP SIZE */
-/* ========================= */
+
 @media screen and (min-width: 1000px) {
 
     /* 3 columns on desktop */
