@@ -12,7 +12,7 @@ const gallery = document.querySelector('.gallery');
 
 
             //select img tag inside dialog, give it src
-            modalImage.src = imageSrc.replace("-sm.jpg", "full");
+            modalImage.src = imageSrc.replace("-sm.jpg", "-full.jpg");
             modal.showModal();
             
         }
