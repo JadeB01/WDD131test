@@ -25,7 +25,7 @@ section {
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
 }
 nav a:hover {
     text-decoration: none;
@@ -34,6 +34,10 @@ nav a:hover {
 
 nav {
     text-align: right;
+}
+
+.hide {
+    display: none;
 }
 .menu-btn {
     cursor: pointer;
@@ -60,9 +64,9 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    nav a {
-        display: inline;
-    }
+    nav {
+    display: block;
+}
 
     .menu-btn {
         display: none;
@@ -74,13 +78,24 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    nav a {
-        display: inline;
-    }
+    nav {
+    display: block;
+}
     
     .menu-btn {
         display: none;
     }
 }
+
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+          
 
 
