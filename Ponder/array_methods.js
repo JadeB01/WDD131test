@@ -48,3 +48,15 @@ let filteredArray = names.filter((name) => {
 })
 
 console.log(filteredArray);
+
+const numbers = [125, 20, 5];
+
+document.getElementById("output").innerHTML = numbers.reduce(myFunc);
+function myFunc(total, num) {
+    return total - num;
+}
+
+const fruits = ["Banana", "Orange", "Apple", "mango"];
+let index = fruits.indexOf("Apple");
+
+document.getElementById("fruits").innerHTML = index;
