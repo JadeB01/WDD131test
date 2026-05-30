@@ -64,7 +64,11 @@ main {
 
     align-items: center;
 
-    padding: 20px 0;
+    padding: 40px 0;
+
+    .blog-post {
+        border-bottom: 1px solid #d8c7aa;
+}
 }
 
 
