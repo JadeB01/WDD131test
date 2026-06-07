@@ -1,0 +1,83 @@
+body {
+    background-color: #bcc8d4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+
+.container {
+    
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+
+input,
+select {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #bcc8d4;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#extraField {
+    display: none;
+    margin-bottom: 25px;
+}
+
+#errorMessages {
+    margin-top: 20px;
+    color: red;
+    font-size: 1.2rem;
+}
+
+#errorMessages p {
+    margin: 5px 0;
+}
+
+#ticketInfo {
+    margin-top: 30px;
+}
+
+#ticketInfo h2 {
+    margin-bottom: 20px;
+}
